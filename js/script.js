@@ -8,7 +8,7 @@ createApp({
         }
     },
     created() {
-        axios.get(this.urlApi).then((resp) => {
+        axios.get(this.apiUrl).then((resp) => {
             this.discList = resp.data;
         })
     }
